@@ -8,8 +8,6 @@
 * Start the Web Chat Client using `npm start` 
 * Unit tests can be run using `npm test`
 
-# Design Considerations
-
 ## Use Case 1 - Simple Group Chat
 1. Open Chat App in 3 browser tabs.
 2. Join each of the 3 tab, with users Ananya, Ryan and Nick respectively. 
@@ -25,11 +23,12 @@ Screenshot: GroupChat.png
 2. Select a different group. Ex: "Coffee Chats"
 3. Latest messages are rendered for the group
 
-### Backlog?
+### Backlog
+- User mentions
 - Push Notifications for new messages, with Service Worker, when we support HTTPS.
 - UX: Supporting large number of users & groups
 
-# Assignment Specifics
+# Design Considerations
 * Chat Features - Simple Group Chat with Server-sent Events [SSE]
 * Maintainability 
     - Modular React component design with Controller component, Presentation component and React Hooks
