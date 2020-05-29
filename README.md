@@ -28,7 +28,7 @@ Screenshot: GroupChat.png
 - Push Notifications for new messages, with Service Worker, when we support HTTPS.
 - UX: Supporting large number of users & groups
 
-# Design Considerations
+## Design Considerations
 * Chat Features - Simple Group Chat with Server-sent Events [SSE]
 * Maintainability 
     - Modular React component design with Controller component, Presentation component and React Hooks
