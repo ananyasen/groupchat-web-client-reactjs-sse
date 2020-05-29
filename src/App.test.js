@@ -1,9 +1,11 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from './App';
+import App from './App'
 
-test('renders learn react link', () => {
+test('renders App', async (done) => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const buttonElement = getByText(/Join the DoorDash Chat!/i);
+  expect(buttonElement).toBeInTheDocument();
+
+  done()
 });

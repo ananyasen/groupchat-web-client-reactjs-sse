@@ -1,0 +1,14 @@
+.group-info{
+    color: #363636;
+    text-align:center;
+    padding:25px;
+}
+
+.group-user{
+    color: #606060;
+    font-size: 11pt;
+}
+
+.current-user{
+    color: darkred;
+}

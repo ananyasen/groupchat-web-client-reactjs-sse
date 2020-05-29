@@ -1,0 +1,71 @@
+.group-chat{
+    text-align: left;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: row;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.left-bar{
+    display: flex;
+    flex-direction: column;
+    background-color: #e45566;
+    color: #f0f8ff;
+    min-height: 90vh;
+    width: 20%;
+    min-width:200px;
+    order: 0;
+}
+
+.right-bar{
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    width: 80%;
+    min-width:500px;
+    order: 1;
+}
+
+.user-info{
+    min-height: 15vh;
+    width: 100%;
+    min-width:100px;
+    order: 0;
+}
+
+.groups{
+    min-height: 85vh;
+    width: 100%;
+    min-width:100px;
+    order: 1;
+}
+
+.group-details{
+    background-color: #f0f8ff;
+    border-bottom: #fffdfd6b groove 1px;
+    min-height: 15vh;
+    width: 100%;
+    min-width:100px;
+    order: 0;
+}
+
+.read-chat{
+    background-color: #e0e8ef;
+    height: 70vh;
+    overflow: scroll;
+    width: 100%;
+    min-width:100px;
+    order: 0;
+}
+
+.send-chat{
+    background-color: #f0f8ff;
+    border-top: #fffdfd6b groove 1px;
+    border-shadow: 2px;
+    min-height: 15vh;
+    width: 100%;
+    min-width:100px;
+    order: 1;
+}
+

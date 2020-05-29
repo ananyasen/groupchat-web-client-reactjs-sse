@@ -1,20 +1,35 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "frontend-project",
+  "version": "1.0.0",
+  "description": "The Frontend take home project for DoorDash",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.1",
-    "@testing-library/user-event": "^7.2.1",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-scripts": "3.4.0"
-  },
+  "author": "Ananya Sen",
+  "license": "ISC",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "api-server": "node server.js"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.1",
+    "@testing-library/user-event": "^7.2.1",
+    "cross-fetch": "^3.0.4",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-scripts": "3.4.0",
+    "shortid": "^2.2.8"
+  },
+  "devDependencies": {
+    "body-parser": "~1.0.1",
+    "express": "~4.0.0",
+    "fetch-mock": "^9.2.1",
+    "serve": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=7.0.0"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -1,68 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![ ](GroupChat-SSE-with_Likes.png)
 
-## Available Scripts
 
-In the project directory, you can run:
+# Install & Run
+* Make sure you have `node` installed. This project was tested on Node v12.13.1.
+* Run `npm install` in this repo to get your dependencies
+* Start the server using `npm run api-server`. Note: Server code was changed a bit to support Server-sent Events [SSE]
+* Start the Web Chat Client using `npm start` 
+* Unit tests can be run using `npm test`
 
-### `npm start`
+# Design Considerations
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Use Case 1 - Simple Group Chat
+1. Open Chat App in 3 browser tabs.
+2. Join each of the 3 tab, with users Ananya, Ryan and Nick respectively. 
+3. Make sure all 3 users have the same Group open. Ex: "Tea Chats".
+4. Send some test messages from all 3 tabs
+5. Now messages from each user will show up for the other users in the chat room.
+6. Also notice new message added to the end, with scrolling up.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Screenshot: GroupChat.png
 
-### `npm test`
+## Use Case 2 - Multiple groups support
+1. Open Chat App in 1 browser tab.
+2. Select a different group. Ex: "Coffee Chats"
+3. Latest messages are rendered for the group
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backlog?
+- Push Notifications for new messages, with Service Worker, when we support HTTPS.
+- UX: Supporting large number of users & groups
 
-### `npm run build`
+# Assignment Specifics
+* Chat Features - Simple Group Chat with Server-sent Events [SSE]
+* Maintainability 
+    - Modular React component design with Controller component, Presentation component and React Hooks
+    - File structure: Component, style, unit test files are together
+    - Used minimal tool for this exercise. But for production code, Webpack, Babel, Less  tools would be necessary
+* Testability 
+    - Unit test with Jest and React Testing Library
+    - Started with a few so far. Production code would need >80% coverage
+* UX 
+    - Field Validations. Responsive with CSS3 Flexbox
+    - Easy to join chat room
+    - Snappy message updates for all messages
+* Performance considerations 
+    - Component Memoization leveraged with React Hooks
+    - Component re-rendered only when necessary
+    - SSE for lightweight server push, over the same HTTP connection. 
+   
+    
+    
+    
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

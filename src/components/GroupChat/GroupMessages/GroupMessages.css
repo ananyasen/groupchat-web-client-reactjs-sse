@@ -1,0 +1,45 @@
+.group-message{
+    padding:10px;
+    font-size: 11pt;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+}
+
+.self-message{
+    align-items: flex-end;
+}
+
+.message{
+    color: #363636;
+    background-color: aliceblue;
+    padding:8px 15px 8px 15px;
+    border-radius: 20px;
+}
+
+.my-message{
+    background-color: #e45566;
+    color: #e0e8ef;
+}
+
+.user-reaction{
+    position:relative;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.message-user{
+    margin-top: 10px;
+    color: #5a5a5a;
+    float: left;
+}
+
+.reaction{
+    margin-top: 10px;
+    cursor: pointer;
+    color: #e45566;
+    font-size: small;
+    order: 5;
+    float: right;
+}

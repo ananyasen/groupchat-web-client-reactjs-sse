@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SendMessage 1`] = `
+<div>
+  <div
+    class="send-container"
+  >
+    <div
+      class="send-message"
+    >
+      <input
+        class="message-box"
+        data-testid="send-text"
+        novalidate=""
+        placeholder="Type a message..."
+        type="text"
+        value=""
+      />
+      <span
+        class="send"
+        data-testid="send-btn"
+      >
+        Send
+      </span>
+    </div>
+  </div>
+</div>
+`;

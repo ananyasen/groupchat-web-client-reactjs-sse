@@ -1,0 +1,21 @@
+.group-tabs{
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
+}
+
+.group{
+    padding-bottom: 15px;
+    padding-top:15px;
+    font-size: 11pt;
+    padding-left:25px;
+}
+
+.group:hover{
+    cursor: pointer;
+    color: #f3932b;
+}
+
+.selected-group{
+    background-color: maroon;
+}
