@@ -1,15 +1,6 @@
 import React, {useEffect, useRef} from 'react'
 import PropTypes from 'prop-types'
 import './GroupMessages.css'
-import addReaction from '../../../assets/addReaction.svg'
-import frowny from '../../../assets/frowny.svg'
-import smiley from '../../../assets/smiley.svg'
-import tada from '../../../assets/tada.svg'
-
-const reactions = {
-    DEFAULT: 'addReaction',
-    SMILE:'smiley'
-}
 
 function GroupMessages({selectedGroupId='', messages=[], currentUser='', addReaction}){
 
@@ -44,11 +35,11 @@ function GroupMessages({selectedGroupId='', messages=[], currentUser='', addReac
                             <small className="message-user">{message.name}</small>
                             <div className='reaction' onClick={addMessageReaction}  >
                                 {message.reaction?
-                                    <span>♥️️</span>
+                                    <span role="img"aria-label="love">♥️️</span>
                                     :
-                                    <span>+1</span>
+                                    <span role="img" aria-label="like">+1</span>
                                 }
-                                {/*<img src={message.reaction?reactions.SMILE:reactions.DEFAULT} onClick={addMessageReaction}  />*/}
+            
                             </div>
                         </div>
                         }
